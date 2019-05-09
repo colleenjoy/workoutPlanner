@@ -5,6 +5,8 @@ import CreateWorkout from './CreateWorkout';
 import InitialSurvey from './InitialSurvey';
 import Log from './Log';
 import Workout from './Workout';
+import FitnessEquipment from './FitnessEquipment';
+import SeedWorkoutSurvey from './SeedWorkoutSurvey';
 
 function App() {
   return (
@@ -24,9 +26,19 @@ function App() {
             </Link> */}
           </nav>
         </header>
-        <Route path="/newuser" component={InitialSurvey} />
-        {/* <Route path="/log" component={Log} />
-        <Route exact path="/workouts" component={Workout} /> */}
+        <Route exact path="/new-user" component={InitialSurvey} />
+        <Route path="/log" component={Log} />
+        <Route exact path="/workouts" component={Workout} />
+        <Route
+          exact
+          path="/new-user/fitness-equipment"
+          component={FitnessEquipment}
+        />
+        <Route
+          exact
+          path="/new-user/seed-workout"
+          component={SeedWorkoutSurvey}
+        />
       </div>
     </HashRouter>
   );

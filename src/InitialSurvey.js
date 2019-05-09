@@ -1,6 +1,8 @@
 import React from 'react';
+import { Link, Route } from 'react-router-dom';
 import MuscleGroups from './MuscleGroups';
 import FitnessEquipment from './FitnessEquipment';
+import SeedWorkoutSurvey from './SeedWorkoutSurvey';
 
 class InitialSurvey extends React.Component {
   constructor(props) {
@@ -14,20 +16,7 @@ class InitialSurvey extends React.Component {
   render() {
     return (
       <div>
-        <div className="initial-survey-section">
-          <span>Which areas would you like to include in your workout? </span>
-          <MuscleGroups />
-          <button name="next" type="button">
-            Next
-          </button>
-        </div>
-        <div className="initial-survey-section">
-          <span>What fitness equipment do you have access to? </span>
-          <FitnessEquipment />
-          <button name="next" type="button">
-            Next
-          </button>
-        </div>
+        <MuscleGroups />
       </div>
     );
   }
