@@ -66,8 +66,8 @@ input[type='checkbox'] + label {
 }
 
 input[type='checkbox']:checked + label {
-  background-color: var(--dark-purple);
-  color: var(--white);
+  background-color: var(--light-purple);
+  /* color: var(--white); */
   border: 2px solid var(--dark-purple);
 }
 
@@ -75,7 +75,15 @@ input[type='checkbox']:checked + label {
 
 .next-link {
   text-decoration: none;
-  background-color: rgba(39, 39, 47, 0.5);
+  background: var(--dark-purple);
   padding: 0.5rem 1rem;
-  color: var(--yellow);
+  color: var(--white);
+  transition: 300ms all ease;
+}
+
+.next-link:hover {
+  background-color: var(--white);
+  border: 1px solid var(--dark-purple);
+  padding: 0.5rem 2rem;
+  color: var(--dark-purple);
 }

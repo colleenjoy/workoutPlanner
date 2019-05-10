@@ -55,7 +55,7 @@ const FitnessEquipment = props => {
           value="full-gym"
           name="full-gym"
           id="full-gym"
-          checked
+          defaultChecked
         />
         <label htmlFor="full-gym">Full Gym</label>
       </div>

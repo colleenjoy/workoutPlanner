@@ -1,8 +1,5 @@
 import React from 'react';
-import { Link, Route } from 'react-router-dom';
-import MuscleGroups from './MuscleGroups';
-import FitnessEquipment from './FitnessEquipment';
-import SeedWorkoutSurvey from './SeedWorkoutSurvey';
+import UserProfileSurvey from './UserProfileSurvey';
 
 class InitialSurvey extends React.Component {
   constructor(props) {
@@ -16,7 +13,7 @@ class InitialSurvey extends React.Component {
   render() {
     return (
       <div>
-        <MuscleGroups />
+        <UserProfileSurvey />
       </div>
     );
   }

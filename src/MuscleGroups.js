@@ -66,8 +66,8 @@ const MuscleGroups = props => {
           value="full-body"
           name="full-body"
           id="full-body"
+          defaultChecked
         />
-
         <label htmlFor="full-body">Full Body</label>
       </div>
       <Link className="next-link" to="/new-user/fitness-equipment">

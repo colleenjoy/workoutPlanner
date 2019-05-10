@@ -7,6 +7,7 @@ import Log from './Log';
 import Workout from './Workout';
 import FitnessEquipment from './FitnessEquipment';
 import SeedWorkoutSurvey from './SeedWorkoutSurvey';
+import MuscleGroups from './MuscleGroups';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route exact path="/new-user" component={InitialSurvey} />
         <Route path="/log" component={Log} />
         <Route exact path="/workouts" component={Workout} />
+        <Route exact path="/new-user/muscle-groups" component={MuscleGroups} />
         <Route
           exact
           path="/new-user/fitness-equipment"
