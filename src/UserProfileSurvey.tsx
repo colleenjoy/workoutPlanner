@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const UserProfileSurvey = props => {
+const UserProfileSurvey: React.FC = props => {
   return (
     <div className="initial-survey-section">
       <input type="number" name="age" min="13" max="100" />

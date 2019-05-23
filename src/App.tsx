@@ -1,7 +1,6 @@
 import React from 'react';
 import { HashRouter, Route, Link } from 'react-router-dom';
 import './App.css';
-import CreateWorkout from './CreateWorkout';
 import InitialSurvey from './InitialSurvey';
 import Log from './Log';
 import Workout from './Workout';
@@ -9,7 +8,7 @@ import FitnessEquipment from './FitnessEquipment';
 import SeedWorkoutSurvey from './SeedWorkoutSurvey';
 import MuscleGroups from './MuscleGroups';
 
-function App() {
+const App: React.FC = () => {
   return (
     <HashRouter>
       <div className="App">

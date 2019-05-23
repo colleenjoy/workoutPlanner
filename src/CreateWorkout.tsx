@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CreateWorkout = () => {
+const CreateWorkout: React.FC = () => {
   return (
     <div>
       <h1>Create a New Workout</h1>

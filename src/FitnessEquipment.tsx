@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const FitnessEquipment = props => {
+const FitnessEquipment: React.FC = props => {
   return (
     <div className="initial-survey-section">
       <span>What fitness equipment do you have access to? </span>
